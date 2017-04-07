@@ -18,18 +18,15 @@ package com.example.bigquery;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
-/**
- * Tests for simple app sample.
- */
+/** Tests for simple app sample. */
 @RunWith(JUnit4.class)
 @SuppressWarnings("checkstyle:abbreviationaswordinname")
 public class QueryParametersSampleIT {
@@ -50,21 +47,21 @@ public class QueryParametersSampleIT {
 
   @Test
   public void testNamedSample() throws Exception {
-    QueryParametersSample.main(new String[]{"named", "romeoandjuliet", "100"});
+    QueryParametersSample.main(new String[] {"named", "romeoandjuliet", "100"});
     String got = bout.toString();
     assertThat(got).contains("love");
   }
 
   @Test
   public void testArraySample() throws Exception {
-    QueryParametersSample.main(new String[]{"array", "M", "WA", "WI", "WV", "WY"});
+    QueryParametersSample.main(new String[] {"array", "M", "WA", "WI", "WV", "WY"});
     String got = bout.toString();
     assertThat(got).contains("James");
   }
 
   @Test
   public void testTimestampSample() throws Exception {
-    QueryParametersSample.main(new String[]{"timestamp"});
+    QueryParametersSample.main(new String[] {"timestamp"});
     String got = bout.toString();
     assertThat(got).contains("2016-12-07T09:00:00Z");
   }

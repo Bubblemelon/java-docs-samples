@@ -28,7 +28,7 @@ You can then run a given `ClassName` via:
 
 ### Running a synchronous query
 
-    mvn exec:java -Dexec.mainClass=com.example.bigquery.SyncQuerySample \
+    mvn exec:java -Dexec.mainClass=com.example.bigquery.QuerySample \
         -Dquery='SELECT corpus FROM `publicdata.samples.shakespeare` GROUP BY corpus;' \
         -DuseLegacySql=false
 

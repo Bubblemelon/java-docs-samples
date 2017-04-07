@@ -18,20 +18,17 @@ package com.example.bigquery;
 
 import static com.google.common.truth.Truth.assertThat;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
-/**
- * Tests for synchronous query sample.
- */
+/** Tests for synchronous query sample. */
 @RunWith(JUnit4.class)
 @SuppressWarnings("checkstyle:abbreviationaswordinname")
-public class SyncQuerySampleIT {
+public class QuerySampleIT {
   private ByteArrayOutputStream bout;
   private PrintStream out;
 
@@ -43,7 +40,7 @@ public class SyncQuerySampleIT {
 
   @Test
   public void testSyncQuery() throws Exception {
-    SyncQuerySample.run(
+    QuerySample.run(
         out,
         "SELECT corpus FROM `publicdata.samples.shakespeare` GROUP BY corpus;",
         10000 /* 10 seconds timeout */,
@@ -55,7 +52,7 @@ public class SyncQuerySampleIT {
 
   @Test
   public void testSyncQueryLegacySql() throws Exception {
-    SyncQuerySample.run(
+    QuerySample.run(
         out,
         "SELECT corpus FROM [publicdata:samples.shakespeare] GROUP BY corpus;",
         10000 /* 10 seconds timeout */,
