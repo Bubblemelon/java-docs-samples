@@ -22,6 +22,11 @@ libraries.
 [maven-download]: https://maven.apache.org/download.cgi
 [maven-install]: https://maven.apache.org/install.html
 
+Helpful tutorials for installing on MAC OSX: (look at Maven Apache Download page instructions first)
+
+http://www.mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/
+https://www.mkyong.com/maven/install-maven-on-mac-osx/
+
 ## Authentication
 This sample uses API Key for authentication.
 
