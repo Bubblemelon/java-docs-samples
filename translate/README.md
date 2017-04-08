@@ -87,6 +87,6 @@ Translate API Features:
 
 ## Bubblemelon's note to self:
 
-Completed at HackDartmouth Spring 2017
+Completed tutorial at HackDartmouth Spring 2017
 
 
