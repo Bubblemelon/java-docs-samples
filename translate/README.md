@@ -83,8 +83,8 @@ Translate API Features:
    java -jar $JAR_FILE translate "$INPUT" $SOURCE_LANG $TARGET_LANG
    ```
 
-=== Bubblemelon Note ===
+### Bubblemelon Note:
 
-Did the above tutorial during hackdartmouth 
+Did the above tutorial during hackdartmouth Spring 2017
 
 
