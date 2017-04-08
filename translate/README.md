@@ -75,7 +75,7 @@ Translate API Features:
  * Detect input text language
    ```
    java -jar $JAR_FILE detect "$INPUT"
-  ```
+   ```
 
  * Translate input text (with options)
    ```
@@ -83,8 +83,6 @@ Translate API Features:
    java -jar $JAR_FILE translate "$INPUT" $SOURCE_LANG $TARGET_LANG
    ```
 
-## Bubblemelon Note:
 
-Did the above tutorial during hackdartmouth Spring 2017
 
 
