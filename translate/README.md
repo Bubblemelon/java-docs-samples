@@ -35,6 +35,8 @@ This sample uses API Key for authentication.
   export GOOGLE_API_KEY=<YOUR_PROJECT_API_KEY>
  ```
 
+This can be placed at ~/.bashrc file.
+
 ## Run the sample
 
 To build the sample, we use Maven.
@@ -83,6 +85,8 @@ Translate API Features:
    java -jar $JAR_FILE translate "$INPUT" $SOURCE_LANG $TARGET_LANG
    ```
 
+## Bubblemelon's note to self:
 
+Completed at HackDartmouth Spring 2017
 
 
